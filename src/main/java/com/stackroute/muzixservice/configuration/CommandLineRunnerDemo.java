@@ -22,8 +22,6 @@ public class CommandLineRunnerDemo implements CommandLineRunner {
     Track track=new Track();
 
 
-
-
     @Override
     public void run(String... args) throws Exception{
         track.setTrackId(id);

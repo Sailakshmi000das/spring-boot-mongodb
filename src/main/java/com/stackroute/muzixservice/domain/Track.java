@@ -1,6 +1,7 @@
 package com.stackroute.muzixservice.domain;
 
 import lombok.AllArgsConstructor;
+
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
@@ -16,6 +17,5 @@ public class Track {
     private int trackId;
 
     private String trackName;
-
     private String trackComments;
 }

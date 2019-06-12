@@ -36,8 +36,8 @@ public class TrackServiceImpl implements TrackService {
         }
     }
 
+
     //displaying all the tracks
-    @Override
     public List<Track> getAllTrack() {
         return trackRepository.findAll();
     }
@@ -62,10 +62,9 @@ public class TrackServiceImpl implements TrackService {
         if (trackRepository.existsById(track.getTrackId())) {
             track.setTrackComments(track.getTrackComments());
             track1 = trackRepository.save(track);
+        return track1;
         } else {
             throw new TrackNotFoundException("track not found");
         }
-
-        return track1;
     }
 }

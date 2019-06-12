@@ -31,9 +31,8 @@ public class TrackController {
             responseEntity = new ResponseEntity<String>(e.getMessage(), HttpStatus.CONFLICT);
             e.printStackTrace();
         }
-        return responseEntity;
+    return responseEntity;
     }
-
     //displaying all the tracks
     @GetMapping("tracks")
     public ResponseEntity<List<Track>> showAllTracks() {
@@ -52,10 +51,8 @@ public class TrackController {
             responseEntity = new ResponseEntity<String>(e.getMessage(), HttpStatus.NOT_FOUND);
             e.printStackTrace();
         }
-        return responseEntity;
+    return responseEntity;
     }
-
-
     //Deleting a track
     @DeleteMapping("track/{id}")
     public ResponseEntity<String> deleteTrack(@PathVariable("id") int id) {
@@ -70,5 +67,9 @@ public class TrackController {
         return responseEntity;
     }
 
+
+
 }
+
+
 

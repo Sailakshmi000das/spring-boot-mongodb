@@ -1,6 +1,6 @@
 created muzix service using spring boot.
  1.Completed all the endpoints for CRUD operations on Muzix
- 2. Used h2-console to view in-memory data
+ 2. Used mongo db for crud operations
  3. Add an endpoint to search trackByName. Understand @Query and parameter passing to@Query
  4. Generated API documentation using Swagger 2
  5. Created custom exceptions TrackNotFoundException, TrackAlreadyExistsException in acom.stack....exceptions package.
